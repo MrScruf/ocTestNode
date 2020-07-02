@@ -1,6 +1,6 @@
 FROM centos:7
 
-RUN yum update -y && yum upgrade -y && yum install -y nodejs git
+RUN yum install -y nodejs git
 
 COPY index.js app/
 COPY package.json app/
