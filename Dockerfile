@@ -1,5 +1,6 @@
 FROM centos:7
 
+RUN curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 RUN yum install -y nodejs git
 
 COPY index.js app/
