@@ -12,5 +12,6 @@ RUN cd app
 RUN npm install
 
 EXPOSE 3000/tcp
-
+RUN ls
+RUN ls ..
 RUN node index.js
