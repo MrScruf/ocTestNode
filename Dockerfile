@@ -13,4 +13,4 @@ RUN npm install
 
 EXPOSE 3000/tcp
 
-RUN nodejs index.js
+RUN node index.js
