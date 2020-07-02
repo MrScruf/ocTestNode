@@ -7,11 +7,10 @@ COPY index.js app/
 COPY package.json app/
 COPY package-lock.json app/
 
-RUN cd app
+WORKDIR app
 
 RUN npm install
 
 EXPOSE 3000/tcp
-RUN ls
-RUN ls ..
+
 RUN node index.js
