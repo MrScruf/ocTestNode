@@ -1,7 +1,7 @@
 FROM centos:7
 
-RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash -
-RUN yum install -y nodejs git
+RUN yum install epel-release
+RUN yum install -y nodejs git npm
 
 COPY index.js app/
 COPY package.json app/
